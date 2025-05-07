@@ -1,0 +1,316 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  scroll-behavior: smooth;
+}
+.main {
+  width: 100%;
+  height: 100vh;
+}
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  top: 0;
+  font-size: larger;
+}
+.section1,
+.section2 {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 55vh;
+  background-color: rgba(241, 241, 241, 1);
+}
+.section2 {
+  height: 75vh;
+}
+
+.container1 {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 53%;
+  height: 52.38%;
+  /* display: flex;
+  flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+
+  transform: translate3d(40%, 5%, 0);
+
+  animation: scroller linear;
+  animation-timeline: view();
+  animation-range-start: entry 0%;
+  animation-range-end: contain 100%;
+}
+.two-split {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr;
+}
+.inner-split {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr;
+  width: inherit;
+}
+.young {
+  width: 150px;
+  height: 200px;
+  border-radius: 10px;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container1 > h1 {
+  font-size: 2.8125em;
+}
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.oswald-light {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 1.5em;
+}
+.para {
+  position: relative;
+  text-align: justify;
+  margin-left: 60px;
+  width: 350px;
+  /* padding: 25px; */
+}
+.scroll-watcher {
+  height: 2px;
+  background-color: black;
+  position: fixed;
+  z-index: 1200;
+  width: 64%;
+  scale: 0 1;
+  transform-origin: left;
+  animation: scroll-watcher linear;
+  animation-timeline: scroll();
+}
+
+@keyframes scroll-watcher {
+  to {
+    scale: 1 1;
+  }
+}
+
+@keyframes scroller {
+  from {
+    /* scale: 0.8; */
+    opacity: 0.5;
+    transform: translate3d(95%, 46%, 0);
+  }
+  to {
+    scale: 1;
+    opacity: 1;
+  }
+}
+.job-title {
+  margin-right: 70px;
+}
+.container2 {
+  position: absolute;
+  top: 250px;
+  left: 0px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 1200px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  /* scale: 0.8; */
+
+  opacity: 0.5;
+  transform: translate3d(40%, 20%, 0);
+
+  animation: scroller2 linear;
+  animation-timeline: view();
+
+  /* animation-range-start: entry 0%;
+  animation-range-end: contain 100%; */
+}
+@keyframes scroller2 {
+  from {
+    /* scale: 0.8; */
+    opacity: 0.5;
+    transform: translate3d(95%, 46%, 0);
+  }
+  to {
+    scale: 1;
+    opacity: 1;
+  }
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+.image-container .world {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.image-container .quote1 {
+  position: absolute;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: absolute;
+  top: 25%;
+  left: 7%;
+  z-index: 1;
+  font-size: 60px;
+  max-width: 100%;
+  text-align: justify;
+
+  animation: scroller3 linear;
+  animation-timeline: view();
+
+  animation-range-start: entry 0%;
+  animation-range-end: contain 100%;
+  scroll-behavior: smooth;
+}
+
+@keyframes scroller3 {
+  0% {
+    transform: skew(-3deg, 0deg);
+    transform: translate3d(100%, 0%, 0);
+    transform: translate3d(100%, 0%, 0) skew(-3deg, 0deg);
+  }
+  5% {
+    transform: skew(-2deg, 0deg);
+    transform: translate3d(95%, 0%, 0);
+    transform: translate3d(95%, 0%, 0) skew(-2deg, 0deg);
+  }
+
+  10% {
+    transform: skew(-1deg, 0deg);
+    transform: translate3d(90%, 0%, 0);
+    transform: translate3d(90%, 0%, 0) skew(-1deg, 0deg);
+  }
+  15% {
+    transform: skew(0);
+    transform: translate3d(85%, 0%, 0);
+    transform: translate3d(85%, 0%, 0) skew(0);
+  }
+  20% {
+    transform: skew(-3deg, 0deg);
+    transform: translate3d(80%, 0%, 0);
+    transform: translate3d(80%, 0%, 0) skew(-3deg, 0deg);
+  }
+  25% {
+    transform: skew(-2deg, 0deg);
+    transform: translate3d(75%, 0%, 0);
+    transform: translate3d(75%, 0%, 0) skew(-2deg, 0deg);
+  }
+  30% {
+    transform: skew(-1deg, 0deg);
+    transform: translate3d(70%, 0%, 0);
+    transform: translate3d(70%, 0%, 0) skew(-1deg, 0deg);
+  }
+  35% {
+    transform: skew(0);
+    transform: translate3d(65%, 0%, 0);
+    transform: translate3d(65%, 0%, 0) skew(0);
+  }
+
+  40% {
+    transform: skew(-3deg, 0deg);
+    transform: translate3d(60%, 0%, 0);
+    transform: translate3d(60%, 0%, 0) skew(-3deg, 0deg);
+  }
+  45% {
+    transform: skew(-2deg, 0deg);
+    transform: translate3d(55%, 0%, 0);
+    transform: translate3d(55%, 0%, 0) skew(-2deg, 0deg);
+  }
+  50% {
+    transform: skew(-1deg, 0deg);
+    transform: translate3d(50%, 0%, 0);
+    transform: translate3d(50%, 0%, 0) skew(-1deg, 0deg);
+  }
+  55% {
+    transform: skew(0);
+    transform: translate3d(45%, 0%, 0);
+    transform: translate3d(45%, 0%, 0) skew(0);
+  }
+  60% {
+    transform: skew(-3deg, 0deg);
+    transform: translate3d(40%, 0%, 0);
+    transform: translate3d(40%, 0%, 0) skew(-3deg, 0deg);
+  }
+
+  65% {
+    transform: skew(-2deg, 0deg);
+    transform: translate3d(35%, 0%, 0);
+    transform: translate3d(35%, 0%, 0) skew(-2deg, 0deg);
+  }
+  70% {
+    transform: skew(-1deg, 0deg);
+    transform: translate3d(30%, 0%, 0);
+    transform: translate3d(30%, 0%, 0) skew(-1deg, 0deg);
+  }
+  75% {
+    transform: skew(0);
+    transform: translate3d(25%, 0%, 0);
+    transform: translate3d(25%, 0%, 0) skew(0);
+  }
+  80% {
+    transform: skew(-3deg, 0deg);
+    transform: translate3d(20%, 0%, 0);
+    transform: translate3d(20%, 0%, 0) skew(-3deg, 0deg);
+  }
+  85% {
+    transform: skew(-2deg, 0deg);
+    transform: translate3d(15%, 0%, 0);
+    transform: translate3d(15%, 0%, 0) skew(-2deg, 0deg);
+  }
+  90% {
+    transform: skew(-1deg, 0deg);
+    transform: translate3d(10%, 0%, 0);
+    transform: translate3d(10%, 0%, 0) skew(-1deg, 0deg);
+  }
+
+  95% {
+    transform: skew(0);
+    transform: translate3d(0%, 0%, 0);
+    transform: translate3d(0%, 0%, 0) skew(0);
+  }
+}
+
+.merienda-light {
+  font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
