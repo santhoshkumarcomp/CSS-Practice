@@ -1,5 +1,5 @@
 import React from "react";
-import webVideo from "./assets/webVideo1.mp4";
+// import webVideo from "./assets/webVideo1.mp4";
 import typingVideo from "./assets/typing.mp4";
 import world from "./assets/world.png";
 import CardLayout from "./CardLayout";
