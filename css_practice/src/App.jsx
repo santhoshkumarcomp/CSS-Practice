@@ -1,13 +1,13 @@
 import React from "react";
-// import webVideo from "./assets/webVideo1.mp4";
-import typingVideo from "./assets/world.png";
+import actualVideoFile from "./assets/webVideo1.mp4"; // Or the correct path to your video
+// import typingVideo from "./assets/world.png"; // This was likely a mistake if a video was intended
 import world from "./assets/world.png";
 import CardLayout from "./CardLayout";
 import TriCardLayout from "./TriCardLayout";
 const App = () => {
   return (
     <div className="main">
-      <video src={typingVideo} autoPlay loop muted />
+      <video src={actualVideoFile} autoPlay loop muted />
       <div className="content">
         <h1>Hello There</h1>
         <p>Journey begins...</p>
